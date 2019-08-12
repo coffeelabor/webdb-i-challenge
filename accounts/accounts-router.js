@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
       res.status(500).json({ message: "Dang bruh" });
     });
 });
-
+//get
 router.get("/:id", (req, res) => {
   db("accounts")
     .where({ id: req.params.id })
